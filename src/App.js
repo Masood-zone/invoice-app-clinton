@@ -1,14 +1,14 @@
 import Navbar from "./components/Navbar";
-import InvoicesForms from "./components/InvoicesForms";
 import InvoicesDetails from "./components/InvoicesDetails";
-import InvoiceList from "./components/InvoiceList";
 
 function App() {
   return (
     <div className="flex ">
       <Navbar />
       {/* Main Content */}
-      <article className="flex-1">Invoices</article>
+      <div className="flex-1 mx-auto max-w-2xl py-3 px-3">
+        <InvoicesDetails />
+      </div>
     </div>
   );
 }
